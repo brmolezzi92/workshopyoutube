@@ -24,6 +24,45 @@ function showDom(element, arr){
     }
 }
 
-showDom("array1",numbers); // IMPRIMIE EL ARRAY POR COMPLETO EN EL DOM CON UNA FUNCION QUE TOMA 2 PARAMETROS, CONTENEDOR ID ARRAY1 Y NOMBRE DEL ARRAY.
+//AGREGAR ELEMENTOS AL ARRAY
+//--------------------------------------
+bebidas.push("heineken"); // AGREGA AL FINAL
+bebidas.unshift("Pronto shake");// AGREGA AL PRINCIPIO
+//------------------------------------
 
+//METODO SPLICE
+//Se pueden meter elementos con el primer parametro y la posicion puede ser guardada en una variable.
+bebidas.splice(2,0,"fullers");
+//------------------------------------
+//METODO POP
+//ELIMINA EL ULTIMO ELEMENTO DEL ARRAY
+let b = bebidas.pop();
+console.log(b)
+
+//METODO SHIFT 
+//ELIMINA EL PRIMER ELEMENTO DEL ARRAY
+// bebidas.shift()
+
+//---------------------------------
+//METODO indexOf
+console.log(numbers.indexOf(1))
+//REALIZA COMPARACION ESTRICA int int string string o devuelve -1 a modo de error.
+
+//METODO INMUTABLE
+//METODO slice genera array a partir de grupo de parametros
+const bebidas2 = bebidas.slice(0,2);
+console.log(bebidas2);
+
+//METODO MUTABLE
+
+
+
+
+
+
+
+
+
+showDom("array1",numbers); // IMPRIMIE EL ARRAY POR COMPLETO EN EL DOM CON UNA FUNCION QUE TOMA 2 PARAMETROS, CONTENEDOR ID ARRAY1 Y NOMBRE DEL ARRAY.
 showDom("array2", bebidas);
+
