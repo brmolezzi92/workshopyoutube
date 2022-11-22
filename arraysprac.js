@@ -54,6 +54,17 @@ const bebidas2 = bebidas.slice(0,2);
 console.log(bebidas2);
 
 //METODO MUTABLE
+//metodo fill
+//posicion 1 y 2 cambia por palabra pato
+//bebidas.fill("pato",1,3);
+//aunque le ponga 15 como posicion final rellena la distancia de tu array. no crea elementos.
+
+//OPERADOR SPREAD
+
+function sum(a,b,c,d,e){
+    return a+b+c+d+e
+}
+console.log(sum(...numbers))
 
 
 
