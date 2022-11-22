@@ -1,0 +1,15 @@
+.content{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #252525;
+    border-radius: 5px;
+    border: blue 1px solid;
+    padding: 1rem;
+}
+
+.content>div{
+    border: black 3px solid;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: white;
+}
